@@ -12,6 +12,9 @@
 .contact .btn{background:#fff;color:var(--ink);border-color:#fff}
 .contact .btn:hover{background:#eaf0ff}
 .portrait{aspect-ratio:4/5;object-position:center top}
+.rakma-feature{margin-bottom:18px;padding:34px;border:1px solid #bad1fa;border-radius:var(--radius);background:linear-gradient(125deg,#eff5ff,#fff 70%);box-shadow:var(--shadow)}
+.rakma-feature h3{margin:10px 0;font-size:32px;line-height:1.15;letter-spacing:-.04em}.rakma-feature p{max-width:850px;margin:0;color:var(--muted);font-size:17px}.rakma-feature .pill{background:#dfeaff;color:#234f8d}.rakma-feature .eyebrow{background:#dce9ff}.rakma-meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.rakma-meta div{padding:16px;border:1px solid #d7e4f6;border-radius:12px;background:#fff}.rakma-meta strong{display:block;margin-bottom:4px}.rakma-meta span{color:var(--muted);font-size:14px}@media(max-width:650px){.rakma-feature{padding:26px}.rakma-meta{grid-template-columns:1fr}}
+.preview{margin-top:24px;padding:22px;border:1px solid #d6e3fb;border-radius:16px;background:#fff}.preview-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.preview-head strong{font-size:18px}.preview-head span{font-size:12px;color:var(--muted)}.preview-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}.preview-stats div{padding:14px;border:1px solid var(--line);border-radius:10px;background:#f7faff}.preview-stats strong{display:block;font-size:22px}.preview-stats span{font-size:12px;color:var(--muted)}.preview-rows{margin-top:12px;border:1px solid var(--line);border-radius:10px;overflow:hidden}.preview-row{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;padding:10px 14px;border-top:1px solid var(--line);font-size:13px}.preview-row:first-child{border-top:0;background:#f4f7fc;font-weight:800}.case-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:20px}.case-actions p{margin:0;color:var(--muted);font-size:13px}@media(max-width:650px){.preview-stats{grid-template-columns:1fr 1fr}.preview-row{grid-template-columns:1.5fr 1fr}.preview-row span:last-child{display:none}}
 </style>
 </head>
 <body>
@@ -29,7 +32,7 @@
 <a href="https://raghulanandan.in/#case-study">Case study</a>
 <a href="https://raghulanandan.in/#experience">Experience</a>
 <a href="https://raghulanandan.in/#skills">Skills</a>
-<a class="nav-resume" href="https://raghulanandan.in/resume.pdf?v=20260907-link" download>Download resume ↓</a>
+<a class="nav-resume" href="resume.pdf?v=20260907-link" download>Download resume ↓</a>
 </div>
 </div>
 </nav>
@@ -62,6 +65,16 @@
 </div>
 <p>These projects bring together business analysis, product workflows, user needs and data-informed improvement.</p>
 </div>
+<article class="rakma-feature" id="rakma-ai">
+<div class="eyebrow">Work in Progress · Currently in Development</div>
+<h3>RAKMA AI - AI-Powered Business Analyst Assistant</h3>
+<p>Developing an AI-assisted platform for the Business Analyst lifecycle. The initial use case focuses on a General Insurance digital journey, with work exploring how structured analysis can support clearer requirements and delivery decisions.</p>
+<div class="rakma-meta">
+<div><strong>Current focus</strong><span>General Insurance digital journey, requirement analysis and journey drop-off concepts.</span></div>
+<div><strong>Workflow concepts</strong><span>BRD/FRD support, acceptance criteria, UAT, change management and project tracking.</span></div>
+</div>
+<div class="pill-row"><span class="pill">Python</span><span class="pill">Git / GitHub</span><span class="pill">Business Analysis</span><span class="pill">WIP</span></div>
+</article>
 <div class="project-grid">
 <article class="project-feature">
 <div class="eyebrow">Featured live project</div>
@@ -74,8 +87,8 @@
 <span class="pill">Spring Boot</span>
 </div>
 <div class="actions">
-<a class="btn" href="https://raghulanandan.in/ProjectFlow/" target="_blank" rel="noreferrer">Open live project ↗</a>
-<a class="btn source" href="#case-study">Read case study</a>
+<a class="btn" href="#case-study">View case study</a>
+<a class="btn source" href="https://raghulanandan.in/ProjectFlow/" target="_blank" rel="noreferrer">Open live dashboard ↗</a>
 <a class="btn source" href="https://github.com/Raghul2727/ProjectFlow" target="_blank" rel="noreferrer">Source code ↗</a>
 </div>
 </article>
@@ -97,6 +110,11 @@
 <div class="number">02 / PROJECTFLOW CASE STUDY</div>
 <h2 style="margin:5px 0 0;font-size:clamp(32px,5vw,48px);letter-spacing:-.05em;line-height:1.08">From scattered project updates to a clear delivery view.</h2>
 <p style="max-width:760px;margin:13px 0 0;color:var(--muted);font-size:17px">ProjectFlow demonstrates a structured approach to project visibility: identifying delivery information that matters, turning it into functional requirements, and reflecting it in a working dashboard.</p>
+<div class="preview" aria-label="ProjectFlow dashboard preview">
+<div class="preview-head"><strong>Dashboard at a glance</strong><span>Illustrative preview of the live interface</span></div>
+<div class="preview-stats"><div><strong>5</strong><span>Total projects</span></div><div><strong>2</strong><span>In progress</span></div><div><strong>1</strong><span>Pending approval</span></div><div><strong>1</strong><span>Live</span></div></div>
+<div class="preview-rows"><div class="preview-row"><span>Project</span><span>Stage</span><span>Status</span></div><div class="preview-row"><span>Motor Insurance Enhancement</span><span>Development</span><span>In Progress</span></div><div class="preview-row"><span>Agent Dashboard Upgrade</span><span>UAT</span><span>UAT</span></div></div>
+</div>
 <div class="case-grid">
 <div class="case-card">
 <strong>Problem</strong>
@@ -133,6 +151,7 @@
 <div class="step">Production deployment</div>
 <div class="step">Live</div>
 </div>
+<div class="case-actions"><a class="btn primary" href="https://raghulanandan.in/ProjectFlow/" target="_blank" rel="noreferrer">Explore the live dashboard ↗</a><p>The data service may take about a minute to start after inactivity.</p></div>
 </div>
 </section>
 <section id="experience">
